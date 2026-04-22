@@ -28,72 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label1 = new Label();
+            txtLenght = new TextBox();
+            txtWidth = new TextBox();
+            txtArea = new TextBox();
+            txtPerimeter = new TextBox();
+            lblLength = new Label();
+            lblWidth = new Label();
+            lblArea = new Label();
+            lblPerimeter = new Label();
+            btnCalculate = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtLenght
             // 
-            textBox1.Location = new Point(256, 28);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 47);
-            textBox1.TabIndex = 0;
+            txtLenght.Location = new Point(207, 34);
+            txtLenght.Name = "txtLenght";
+            txtLenght.Size = new Size(250, 47);
+            txtLenght.TabIndex = 0;
             // 
-            // textBox2
+            // txtWidth
             // 
-            textBox2.Location = new Point(248, 266);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 47);
-            textBox2.TabIndex = 1;
+            txtWidth.Location = new Point(207, 113);
+            txtWidth.Name = "txtWidth";
+            txtWidth.Size = new Size(250, 47);
+            txtWidth.TabIndex = 1;
             // 
-            // textBox3
+            // txtArea
             // 
-            textBox3.Location = new Point(248, 180);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(250, 47);
-            textBox3.TabIndex = 2;
+            txtArea.Location = new Point(207, 186);
+            txtArea.Name = "txtArea";
+            txtArea.ReadOnly = true;
+            txtArea.Size = new Size(250, 47);
+            txtArea.TabIndex = 2;
             // 
-            // textBox4
+            // txtPerimeter
             // 
-            textBox4.Location = new Point(256, 107);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(250, 47);
-            textBox4.TabIndex = 3;
+            txtPerimeter.AcceptsTab = true;
+            txtPerimeter.BorderStyle = BorderStyle.FixedSingle;
+            txtPerimeter.Location = new Point(207, 261);
+            txtPerimeter.Name = "txtPerimeter";
+            txtPerimeter.ReadOnly = true;
+            txtPerimeter.Size = new Size(250, 47);
+            txtPerimeter.TabIndex = 3;
             // 
-            // label1
+            // lblLength
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(136, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(97, 41);
-            label1.TabIndex = 4;
-            label1.Text = "label1";
+            lblLength.AutoSize = true;
+            lblLength.Location = new Point(77, 34);
+            lblLength.Name = "lblLength";
+            lblLength.Size = new Size(110, 41);
+            lblLength.TabIndex = 4;
+            lblLength.Text = "Length";
+            // 
+            // lblWidth
+            // 
+            lblWidth.AutoSize = true;
+            lblWidth.Location = new Point(77, 113);
+            lblWidth.Name = "lblWidth";
+            lblWidth.Size = new Size(98, 41);
+            lblWidth.TabIndex = 5;
+            lblWidth.Text = "Width";
+            // 
+            // lblArea
+            // 
+            lblArea.AutoSize = true;
+            lblArea.Location = new Point(77, 186);
+            lblArea.Name = "lblArea";
+            lblArea.Size = new Size(78, 41);
+            lblArea.TabIndex = 6;
+            lblArea.Text = "Area";
+            // 
+            // lblPerimeter
+            // 
+            lblPerimeter.AutoSize = true;
+            lblPerimeter.Location = new Point(30, 264);
+            lblPerimeter.Name = "lblPerimeter";
+            lblPerimeter.Size = new Size(145, 41);
+            lblPerimeter.TabIndex = 7;
+            lblPerimeter.Text = "Perimeter";
+            // 
+            // btnCalculate
+            // 
+            btnCalculate.BackColor = SystemColors.Control;
+            btnCalculate.FlatAppearance.BorderColor = Color.Blue;
+            btnCalculate.FlatAppearance.BorderSize = 3;
+            btnCalculate.FlatStyle = FlatStyle.Flat;
+            btnCalculate.Location = new Point(94, 393);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(325, 162);
+            btnCalculate.TabIndex = 8;
+            btnCalculate.Text = "Calculate Area and Perimeter";
+            btnCalculate.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            ClientSize = new Size(599, 628);
+            Controls.Add(btnCalculate);
+            Controls.Add(lblPerimeter);
+            Controls.Add(lblArea);
+            Controls.Add(lblWidth);
+            Controls.Add(lblLength);
+            Controls.Add(txtPerimeter);
+            Controls.Add(txtArea);
+            Controls.Add(txtWidth);
+            Controls.Add(txtLenght);
             Name = "Form1";
-            Text = "Area and Parameter...";
+            Text = "Area and Perimeter...";
             ResumeLayout(false);
             PerformLayout();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Label label1;
+        private TextBox txtLenght;
+        private TextBox txtWidth;
+        private TextBox txtArea;
+        private TextBox txtPerimeter;
+        private Label lblLength;
+        private Label lblWidth;
+        private Label lblArea;
+        private Label lblPerimeter;
+        private Button btnCalculate;
     }
 }
